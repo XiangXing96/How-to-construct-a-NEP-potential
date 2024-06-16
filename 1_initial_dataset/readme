@@ -1,0 +1,6 @@
+In this folder, we want to construct an initial dataset with hundreds of structures. The process contains five steps:  
+1. conduct aimd simulations;  
+2. extract some structrures from aimd trajectories and construct a rough nep model;  
+3. pick structures from aimd trajectories based on the distance in latent space;
+4. displace atoms in extracted structures from aimd and choose some of them based on the distance in latent space;
+5. conduct DFT simulations at a higher accuracy (increase k mesh or energy cutoff). 
