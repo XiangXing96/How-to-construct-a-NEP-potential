@@ -7,4 +7,6 @@ To run scripts mentioned in the tutorial, some packages are required:
 (3) High-order force constants for the masses (https://hiphive.materialsmodeling.org/) is used to generate structures with random displacement for atoms. 
 
 You can construct a nep through entering the above folders step by step.  
-Hope you successful ^_^ !
+__NOTE: VASP input files should be set up for your own systems!!!__   
+
+__Hope you successful ^_^ !__
