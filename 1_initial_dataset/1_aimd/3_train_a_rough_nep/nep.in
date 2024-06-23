@@ -1,0 +1,9 @@
+type         3 Li In Cl
+version      4
+cutoff       6.5 5.0
+n_max        8 8
+l_max        4 2
+neuron       40
+batch        20000
+generation   400000
+ 
