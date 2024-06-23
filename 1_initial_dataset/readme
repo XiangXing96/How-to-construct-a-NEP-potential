@@ -5,4 +5,4 @@ In this folder, we want to construct an initial dataset with hundreds of structu
 4. conduct DFT simulations at a higher accuracy (increase k mesh or energy cutoff). 
 5. merge SCF results.
 
-__It is very important to set vasp simulations properly__
+“It is very important to set vasp simulations properly!!!!”
