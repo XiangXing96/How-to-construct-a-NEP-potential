@@ -75,4 +75,4 @@ for i in range(0, len(fcc), 50):
 	all_reduced_50.append(fcc[i])
 
 write('all.traj', [i for i in all])
-write('all_reduced_for_initial.traj', [i for i in all_reduced_50])
+write('train.xyz', [i for i in all_reduced_50])
