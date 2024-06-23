@@ -20,5 +20,5 @@ for i in range(469):
 		a.append(j)
 		
 print(len(a))
-write('new_structures.xyz', [i for i in a])
-write('new_structures.traj', [i for i in a])
+write('rough_train.xyz', [i for i in a])
+write('rough_train.traj', [i for i in a])
