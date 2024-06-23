@@ -1,0 +1,42 @@
+# ab initial setting
+PREC = Normal
+ENCUT = 500
+LREAL= Auto
+ISMEAR = 0
+SIGMA = 0.05
+ISTART = 0
+EDIFF = 1E-04
+KGAMMA = .TRUE. 
+KSPACING = 1.0
+NELMIN=5
+NELM = 200
+IWAVPR = 11
+IVDW =12
+
+# MD setting
+IBRION = 0
+POTIM = 2        # timestep in fs
+NSW = 5000       # total steps
+NBLOCK = 20
+NWRITE = 1
+IALGO = 38
+#ALGO = fast
+ISYM = 0
+
+# ensemble setting
+MDALGO = 3                # 2=Nose-Hoover, 3=Langevin
+ISIF = 3                  # 1=NVE, 2=NVT, 3=NPT
+PSTRESS = 0
+LANGEVIN_GAMMA = 10 10 10
+LANGEVIN_GAMMA_L = 10
+TEBEG = 200
+TEEND = 200
+
+
+# Write flags
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+
+# paral setting
+NCORE = 20
+
