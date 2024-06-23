@@ -16,7 +16,7 @@ for j in temp:
 	all.append(j)
 
 
-file = "./aimd.xyz"
+file = "./'all.traj"
 temp = read(file, ":")
 print(file)
 print(len(temp))
