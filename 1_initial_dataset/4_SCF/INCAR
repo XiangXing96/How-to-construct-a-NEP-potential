@@ -1,0 +1,35 @@
+# ab initial setting
+GGA = PE
+PREC = Accurate
+ENCUT = 700
+LREAL = .FALSE.
+
+# Electronic
+ISMEAR = 0
+SIGMA = 0.05
+IALGO = 38
+#ALGO = Fast
+EDIFF = 1E-06
+
+ISYM = 0
+
+NELMIN = 4
+NELM = 200
+NELMDL = -5
+
+# Ionic
+IBRION = -1
+KSPACING = 0.2
+KGAMMA = False
+PSTRESS = 0.0
+IVDW =12
+
+NSW = 0
+
+# Write flags
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+
+# paral setting
+NCORE = 20
+
