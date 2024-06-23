@@ -1,0 +1,30 @@
+# GaN molecular dynamics using Tersoff potential
+
+units		metal
+
+boundary	p p p
+
+box tilt large
+
+
+atom_style      atomic
+
+read_data       lammps.data
+
+# interatomic potential
+pair_style      nep nep.txt
+pair_coeff      * *
+neighbor	0.3 bin
+neigh_modify    every 1 delay 0 check yes
+
+#variable        t equal 300
+
+#timestep        0.001
+
+thermo_style custom step temp pe press vol lx ly lz xy xz yz cellalpha cellbeta cellgamma cella cellb cellc
+thermo          1000
+
+fix 2 all box/relax tri 0.0
+minimize 0.0 1.0e-6 100000 100000
+unfix 2
+write_data 0bar.data
