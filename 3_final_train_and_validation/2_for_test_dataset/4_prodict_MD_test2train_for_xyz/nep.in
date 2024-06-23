@@ -1,0 +1,10 @@
+type         3 Li In Cl
+version      4
+cutoff       8 5.5
+n_max        8 8
+l_max        4 2
+neuron       50
+batch        2000
+generation   100000
+prediction   1
+ 
