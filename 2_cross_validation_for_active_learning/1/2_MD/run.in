@@ -1,0 +1,50 @@
+potential /home/xxiangad/Li3InCl6/active/1_model/1/nep.txt
+potential /home/xxiangad/Li3InCl6/active/1_model/2/nep.txt
+potential /home/xxiangad/Li3InCl6/active/1_model/3/nep.txt
+potential /home/xxiangad/Li3InCl6/active/1_model/4/nep.txt
+potential /home/xxiangad/Li3InCl6/active/1_model/5/nep.txt
+
+time_step 1.0
+velocity 650.0
+
+ensemble npt_scr 650.0 650.0 100 0 0 0 0 0 0 50 50 50 50 50 50 1000
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 500000
+
+ensemble nvt_nhc 650.0 650.0 100
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 1000000
+
+ensemble npt_scr 650.0 650.0 100 0 0 0 0 0 0 50 50 50 50 50 50 1000
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 500000
+
+ensemble nvt_nhc 650.0 650.0 100
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 1000000
+
+ensemble npt_scr 650.0 650.0 100 0 0 0 0 0 0 50 50 50 50 50 50 1000
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 500000
+
+ensemble nvt_nhc 650.0 650.0 100
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 1000000
+
+ensemble nve
+dump_thermo     1000
+dump_exyz 1000000 0 0
+active 100 0 0 0.1
+run 1000000
