@@ -1,8 +1,5 @@
 """
-Random XYZ for initial picking
-===========================
-This example shows how to shuffle structures randomly
-provided by Kick-H
+please modify the path according your environment
 """
 #from pynep.io import load_nep,dump_nep
 import random
@@ -19,7 +16,7 @@ for j in temp:
 	all.append(j)
 
 
-file = "./train.xyz"
+file = "./aimd.xyz"
 temp = read(file, ":")
 print(file)
 print(len(temp))
